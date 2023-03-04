@@ -1,0 +1,22 @@
+package ejercicio5;
+
+public class Ejercicio5 {
+
+    public static void main(String[] args) {
+        double suma;
+        double x,y;
+        suma = 0;
+        x = 20;
+        System.out.println("suma es: " + suma );
+        System.out.println("x es: " + x );
+        suma = suma + x;
+        y = 40;
+        System.out.println("y es: " + y );
+        System.out.println("suma es: " + suma );
+        x = x + Math.pow(y,2);
+        System.out.println("x es: " + x );
+        suma = suma + x / y;
+        System.out.println("EL VALOR DE LA SUMA ES: " + suma );
+    }
+    
+}
