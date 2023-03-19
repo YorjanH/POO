@@ -1,0 +1,39 @@
+package ejericicio18;
+import java.util.Scanner;
+
+public class Ejericicio18 {
+
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in);
+        Scanner registro = new Scanner(System.in);
+        
+        double valor_h_trabajada, salario_bruto, salario_neto , porcentaje;
+        int codigo_empleado, nh_trabajadas;
+        
+        String nombre; 
+                
+        System.out.println("Ingrese el codigo del empleado");
+        codigo_empleado = entrada.nextInt();
+        
+        System.out.println("Ingrese el nombre del empleado");
+        nombre = registro.nextLine();
+        
+        System.out.println("Ingrese el numero de horas trabajadas");
+        nh_trabajadas = entrada.nextInt();
+        
+        System.out.println("Ingrese el valor de la hora");
+        valor_h_trabajada = entrada.nextDouble();
+        
+        System.out.println("Ingrese el porcentaje de retencion");
+        porcentaje = entrada.nextDouble();
+        
+        salario_bruto = nh_trabajadas * valor_h_trabajada;
+        salario_neto = salario_bruto - salario_bruto*(porcentaje/100);
+        
+        System.out.println(codigo_empleado + " , " + nombre + " , " + salario_bruto + " , " + salario_neto);
+        
+
+    }
+    
+}
