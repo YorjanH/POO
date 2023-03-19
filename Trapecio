@@ -1,0 +1,26 @@
+public class Trapecio {
+    
+    int B;
+    int b;
+    int h;
+    
+    public Trapecio(int B, int b, int h) { 
+        this.B = B;
+        this.b = b;
+        this.h = h;
+    }
+    
+    double calcularArea() {
+        return (((B+b) / 2) * h);
+    }
+
+    double calcularHipotenusa() {
+        return Math.sqrt((((B-b)/2)*((B-b)/2)) + (h*h));
+    }
+    
+    double calcularPerímetro() {
+        return ((2*calcularHipotenusa()) + B + b);
+    
+    }
+    
+}
