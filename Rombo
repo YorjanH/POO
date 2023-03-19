@@ -1,0 +1,24 @@
+public class Rombo {
+    
+    int DiagonalMayor;
+    int Diagonalmenor;
+
+    public Rombo(int DiagonalMayor, int Diagonalmenor) { 
+        this.DiagonalMayor = DiagonalMayor;
+        this.Diagonalmenor = Diagonalmenor;
+    }
+    
+    double calcularArea() {
+        return ((DiagonalMayor * Diagonalmenor) / 2);
+    }
+
+    double calcularHipotenusa() {
+        return Math.sqrt(((Diagonalmenor/2)*(Diagonalmenor/2)) + ((DiagonalMayor/2)*(DiagonalMayor/2)));
+    }
+    
+    double calcularPerímetro() {
+        return (calcularHipotenusa()+calcularHipotenusa()+calcularHipotenusa()+calcularHipotenusa());
+    }
+
+    
+}
