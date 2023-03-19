@@ -1,0 +1,48 @@
+package ejercicio_14;
+import java.util.Scanner;
+
+public class Ejercicio_14 {
+
+    public static void main(String[] args) {
+        
+        double VD1, VD2, VD3, salario, totalven, porcentajeven, salar1, salar2, salar3;
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Ingrese las ventas del departamento #1");
+        VD1 = entrada.nextDouble();
+        
+        System.out.println("Ingrese las ventas del departamento #2");
+        VD2 = entrada.nextDouble();
+        
+        System.out.println("Ingrese las ventas del departamento #3");
+        VD3 = entrada.nextDouble();
+        
+        System.out.println("Ingrese el salario de los vendedores");
+        salario = entrada.nextDouble();
+        
+        totalven = VD1 + VD2 + VD3;
+        porcentajeven = 0.33 * totalven;
+        
+        if (VD1 > porcentajeven){
+            salar1  = salario + (0.2 * salario);
+        } else {
+            salar1 = salario;
+        }
+        
+        if (VD2 > porcentajeven){
+            salar2  = salario + (0.2 * salario);
+        } else {
+            salar2 = salario;
+        }
+        
+        if (VD3 > porcentajeven){
+            salar3  = salario + (0.2 * salario);
+        } else {
+            salar3 = salario;
+        }
+
+        System.out.println("Salario vendedores DEPTO.1 " + salar1 + "Salario vendedores DEPTO.2 " + salar2 + "Salario vendedores DEPTO.3 " + salar3);
+        
+    }
+    
+}
