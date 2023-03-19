@@ -1,0 +1,32 @@
+package ejercicio23;
+import java.util.Scanner;
+
+public class Ejercicio23 {
+
+
+    public static void main(String[] args) {
+        
+        double A, B, C, solucion0, solucion1;
+        
+        Scanner leer = new Scanner(System.in);
+        
+        System.out.println("Ingrese el primer valor");
+        A = leer.nextDouble();
+        
+        System.out.println("Ingrese el segundo valor");
+        B = leer.nextDouble();
+        
+        System.out.println("Ingrese el tercer valor");
+        C = leer.nextDouble();
+        
+
+
+       solucion0 = (-B + Math.sqrt(Math.pow(B, 2)-4*A*C))/(2*A);
+       solucion1 = (-B - Math.sqrt(Math.pow(B, 2)-4*A*C))/(2*A);
+       
+       System.out.println("Sus soluciones son: " + solucion0 + " y " + solucion1);
+
+
+    }
+    
+}
