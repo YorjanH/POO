@@ -1,0 +1,48 @@
+package ejercicio13;
+import java.util.Scanner;
+
+public class Ejercicio13 {
+
+
+    public static void main(String[] args) {
+        
+        int descuento = 0;
+        double valor_compra, valor_pagar;
+        String color;
+        
+        Scanner entrada = new Scanner(System.in);
+        Scanner leerporteclado = new Scanner(System.in);
+        
+        System.out.println("Ingrese el valor de la compra");
+        valor_compra = entrada.nextDouble();
+        
+        System.out.println("Ingrese el color");
+        color = leerporteclado.nextLine();
+        
+        if (color.equals("Blanco")){
+            descuento = 0;
+        } else {
+            if (color.equals("verde")){
+                descuento = 10;
+            } else {
+                if (color.equals("Amarillo")){
+                    descuento = 25;
+                } else {
+                    if (color.equals("Azul")){
+                        descuento = 50;
+                    } else {
+                        if (color.equals("Rojo")){
+                            descuento = 100;
+                        }
+                    }
+                }
+            }
+        }
+   
+        
+        valor_pagar = valor_compra - ((descuento * valor_compra)/100);
+      
+        System.out.println("El  cliente  debe pagar $" + valor_pagar);
+    }
+    
+}
