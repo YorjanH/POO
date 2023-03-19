@@ -1,0 +1,40 @@
+package ejercicio10;
+import java.util.Scanner;
+
+public class Ejercicio10 {
+
+ 
+    public static void main(String[] args) {
+        int numeroinscripcion, estratosocial;
+        double patrimonio , valorcobrar = 50000;
+        
+        String nombre;
+        
+        Scanner leerporteclado = new Scanner(System.in);
+        Scanner escriba = new Scanner(System.in);
+        
+        System.out.println("Ingrese el numero de inscripcion");
+        numeroinscripcion = leerporteclado.nextInt();
+        
+        System.out.println("Ingrese el patrimonio");
+        patrimonio = leerporteclado.nextDouble();
+        
+        System.out.println("Ingrese el estrato");
+        estratosocial = leerporteclado.nextInt();
+        
+        System.out.println("Ingrese el nombre");
+        nombre = escriba.nextLine();
+        
+        if (patrimonio > 2000000 && estratosocial > 3) {
+            valorcobrar = valorcobrar + (patrimonio * 0.03);
+            System.out.println("El numero de inscripcion es " + numeroinscripcion);
+            System.out.println("El nombre es " + nombre);
+            System.out.println("El valor de la matricula es " + valorcobrar);
+        } else {
+            System.out.println("El numero de inscripcion es " + numeroinscripcion);
+            System.out.println("El nombre es " + nombre);
+            System.out.println("El valor de la matricula es " + 50000);
+        }
+    }
+    
+}
