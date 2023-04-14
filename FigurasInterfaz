@@ -1,0 +1,14 @@
+package figurasinterfaz;
+
+/**
+ *
+ * @author PC
+ */
+public class FigurasInterfaz {
+
+    public static void main(String[] args) {
+        Menuprincipal ventana = new Menuprincipal();
+        ventana.setVisible(true);
+    }
+    
+}
